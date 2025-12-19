@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>General Services - One Contact Solutions</title>
+
+  <!-- Global styles from your site -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="general-services.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">One Contact Solutions (OCS)</div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="general-hero">
+    <div class="hero-content">
+      <h1>General Services</h1>
+      <p>From photocopying to online applications and document services — we've got all your everyday service needs covered with professional quality and quick turnaround.</p>
+    </div>
+  </section>
+
+  <!-- Services list -->
+  <section class="general-services">
+    <div class="container">
+      <h2>Our General Services</h2>
+      <p>We provide comprehensive general services for all your daily needs. Click <strong>Request Service</strong> on any card to contact us directly about that service.</p>
+
+      <div class="general-grid">
+        <div class="general-card">
+          <div class="icon">📄</div>
+          <h3>Photo Copy</h3>
+          <p>High-quality photocopying services for all your document duplication needs.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Photo Copy')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">🖨️</div>
+          <h3>Print</h3>
+          <p>Professional printing services for documents, forms, and materials.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Print')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">📷</div>
+          <h3>Scan</h3>
+          <p>Document scanning and digitization services for easy storage and sharing.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Scan')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">🖼️</div>
+          <h3>Passport Size Photo</h3>
+          <p>Professional passport size photographs for all official purposes.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Passport Size Photo')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">💻</div>
+          <h3>Online Application Form</h3>
+          <p>Assistance with filling and submitting various online application forms.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Online Application Form')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">🔤</div>
+          <h3>Hindi Typing</h3>
+          <p>Professional Hindi typing services for documents and applications.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Hindi Typing')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">⌨️</div>
+          <h3>English Typing</h3>
+          <p>Fast and accurate English typing services for all your documentation needs.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('English Typing')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">🚗</div>
+          <h3>Driving License</h3>
+          <p>Complete assistance with driving license applications and renewals.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Driving License')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">📋</div>
+          <h3>Form Filling Services</h3>
+          <p>Professional assistance with various government and private form filling.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Form Filling Services')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">📱</div>
+          <h3>Mobile Recharge</h3>
+          <p>Quick and convenient mobile recharge services for all networks.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Mobile Recharge')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">💡</div>
+          <h3>Bill Payment Services</h3>
+          <p>Utility bill payment services including electricity, water, and gas bills.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Bill Payment Services')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="general-card">
+          <div class="icon">📄</div>
+          <h3>Document Services</h3>
+          <p>Complete document preparation and formatting services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Document Services')">Request Service</button>
+          </div>
+        </div>
+      </div> <!-- .general-grid -->
+    </div> <!-- .container -->
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Need Quick General Services?</h2>
+    <p>If you'd like to request any general service, click the button below — we'll handle all your daily service needs efficiently.</p>
+    <div style="margin-top:18px;">
+      <button class="btn" onclick="requestService('General Service Consultation')">Request General Service</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 One Contact Solutions | All Rights Reserved</p>
+  </footer>
+
+  <!-- Small script: store selected service and go to contact on home page -->
+  <script>
+    function requestService(serviceName) {
+      try {
+        localStorage.setItem('ocs_selected_service', serviceName);
+      } catch (e) {
+        console.warn('Could not save service selection', e);
+      }
+      // Redirect user to the contact section of your home page
+      window.location.href = 'index.html#contact';
+    }
+  </script>
+
+</body>
+</html>

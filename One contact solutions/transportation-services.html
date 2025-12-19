@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transportation Services - One Contact Solutions</title>
+
+  <!-- Global styles from your site -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="transportation-services.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">One Contact Solutions (OCS)</div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="transportation-hero">
+    <div class="hero-content">
+      <h1>Transportation Services</h1>
+      <p>Reliable transportation solutions for all your travel needs — from individual vehicles to commercial transport with trusted drivers.</p>
+    </div>
+  </section>
+
+  <!-- Services list -->
+  <section class="transportation-services">
+    <div class="container">
+      <h2>Our Transportation Services</h2>
+      <p>We provide safe and reliable transportation services for various needs. Click <strong>Request Service</strong> on any card to contact us directly about that service.</p>
+
+      <div class="transportation-grid">
+        <div class="transportation-card">
+          <div class="icon">🚗</div>
+          <h3>Individual Vehicles</h3>
+          <p>Personal vehicle rental services for individual transportation needs.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Individual Vehicles')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🚕</div>
+          <h3>Daily Rent Car/Bike</h3>
+          <p>Daily rental services for cars and bikes at affordable rates.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Daily Rent Car/Bike')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🚛</div>
+          <h3>Heavy Vehicles</h3>
+          <p>Heavy vehicle rental for cargo transport and logistics needs.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Heavy Vehicles')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">👨‍✈️</div>
+          <h3>Trusted Driver</h3>
+          <p>Professional and experienced drivers for safe transportation services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Trusted Driver')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🚐</div>
+          <h3>Commercial Vehicles</h3>
+          <p>Commercial vehicle rental for business and transport operations.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Commercial Vehicles')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🚌</div>
+          <h3>Group Transportation</h3>
+          <p>Bus and van rental services for group travel and events.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Group Transportation')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">✈️</div>
+          <h3>Airport Transfer</h3>
+          <p>Reliable airport pickup and drop-off transportation services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Airport Transfer')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🎉</div>
+          <h3>Event Transportation</h3>
+          <p>Special transportation services for weddings, parties, and events.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Event Transportation')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🏢</div>
+          <h3>Corporate Transport</h3>
+          <p>Corporate transportation solutions for business travel and meetings.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Corporate Transport')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">📦</div>
+          <h3>Goods Transport</h3>
+          <p>Safe and secure goods transportation and delivery services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Goods Transport')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🕒</div>
+          <h3>24/7 Service</h3>
+          <p>Round-the-clock transportation services for emergency and urgent needs.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('24/7 Service')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="transportation-card">
+          <div class="icon">🛣️</div>
+          <h3>Long Distance Travel</h3>
+          <p>Comfortable long-distance transportation services with experienced drivers.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Long Distance Travel')">Request Service</button>
+          </div>
+        </div>
+      </div> <!-- .transportation-grid -->
+    </div> <!-- .container -->
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Need Reliable Transportation?</h2>
+    <p>If you'd like to request transportation services, click the button below — we'll connect you with the right transport solution.</p>
+    <div style="margin-top:18px;">
+      <button class="btn" onclick="requestService('Transportation Consultation')">Request Transportation Service</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 One Contact Solutions | All Rights Reserved</p>
+  </footer>
+
+  <!-- Small script: store selected service and go to contact on home page -->
+  <script>
+    function requestService(serviceName) {
+      try {
+        localStorage.setItem('ocs_selected_service', serviceName);
+      } catch (e) {
+        console.warn('Could not save service selection', e);
+      }
+      // Redirect user to the contact section of your home page
+      window.location.href = 'index.html#contact';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+/* placement-services.css - Mobile-First Responsive Design */
+
+/* ==========================================================================
+   BASE STYLES (Mobile-First)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hero Section (Mobile-First) */
+.placement-hero {
+  width: 100%;
+  min-height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('images/placement.png') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  color: #fff;
+  margin-top: 70px;
+}
+
+.placement-hero .hero-content {
+  max-width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.placement-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.placement-hero p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Services Section (Mobile-First) */
+.placement-services {
+  background: #ffffff;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.placement-services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.placement-services h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.placement-services p {
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Grid - Mobile-First */
+.placement-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.placement-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.placement-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.placement-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2980b9;
+}
+
+.placement-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1rem;
+  color: #111;
+  line-height: 1.3;
+}
+
+.placement-card p {
+  color: #444;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  text-align: left;
+  padding: 0;
+}
+
+/* Card Actions */
+.card-actions {
+  margin-top: auto;
+  text-align: center;
+}
+
+.request-btn {
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.request-btn:hover { 
+  background: #155fc0; 
+  transform: translateY(-1px);
+}
+
+/* CTA Section (Mobile-First) */
+.cta-section {
+  background: #0f1724;
+  color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.cta-section p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cta-section .btn {
+  background: #ffd54d;
+  color: #111;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.cta-section .btn:hover { 
+  background: #ffdf7a;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+/* ==========================================================================
+   TABLET BREAKPOINT (768px and up)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .placement-hero {
+    min-height: 40vh;
+    padding: 3rem 2rem;
+  }
+  
+  .placement-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .placement-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .placement-services {
+    padding: 4rem 2rem;
+  }
+  
+  .placement-services h2 {
+    font-size: 2rem;
+  }
+  
+  .placement-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .placement-card {
+    padding: 2rem;
+    min-height: 160px;
+  }
+  
+  .placement-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .placement-card p {
+    font-size: 0.95rem;
+  }
+  
+  .request-btn {
+    width: auto;
+    min-width: 140px;
+  }
+  
+  .cta-section {
+    padding: 3rem 2rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP BREAKPOINT (1024px and up)
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+  .placement-hero {
+    min-height: 300px;
+  }
+  
+  .placement-hero h1 {
+    font-size: 3rem;
+  }
+  
+  .placement-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .placement-services {
+    padding: 5rem 2rem;
+  }
+  
+  .placement-services h2 {
+    font-size: 2.2rem;
+  }
+  
+  .placement-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .placement-card {
+    min-height: 180px;
+  }
+  
+  .placement-card .icon {
+    font-size: 2.5rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ==========================================================================
+   LARGE DESKTOP BREAKPOINT (1200px and up)
+   ========================================================================== */
+
+@media (min-width: 1200px) {
+  .placement-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+  
+  .placement-card {
+    padding: 2.5rem;
+  }
+}
+
+/* ==========================================================================
+   MOBILE SPECIFIC OPTIMIZATIONS
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .placement-hero {
+    min-height: 50vh;
+    padding: 1.5rem 1rem;
+  }
+  
+  .placement-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .placement-hero p {
+    font-size: 0.95rem;
+  }
+  
+  .placement-services {
+    padding: 2rem 0.5rem;
+  }
+  
+  .placement-services h2 {
+    font-size: 1.6rem;
+  }
+  
+  .placement-card {
+    padding: 1.25rem;
+    min-height: 120px;
+  }
+  
+  .placement-card h3 {
+    font-size: 1rem;
+  }
+  
+  .placement-card p {
+    font-size: 0.85rem;
+  }
+  
+  .request-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .cta-section .btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

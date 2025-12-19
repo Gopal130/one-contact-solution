@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Internship Services - One Contact Solutions</title>
+
+  <!-- Global styles from your site -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="internship-services.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">One Contact Solutions (OCS)</div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="internship-hero">
+    <div class="hero-content">
+      <h1>Internship Services</h1>
+      <p>Professional internship opportunities across multiple industries — from banking to hospitality with comprehensive training and mentorship programs.</p>
+    </div>
+  </section>
+
+  <!-- Services list -->
+  <section class="internship-services">
+    <div class="container">
+      <h2>Our Internship Services</h2>
+      <p>We provide valuable internship opportunities to kickstart your career. Click <strong>Request Service</strong> on any card to contact us directly about that internship.</p>
+
+      <div class="internship-grid">
+        <div class="internship-card">
+          <div class="icon">🏦</div>
+          <h3>Banking</h3>
+          <p>Banking sector internships with hands-on experience in financial operations and customer service.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Banking Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🌟</div>
+          <h3>Personality Development</h3>
+          <p>Internship programs focused on professional personality development and soft skills enhancement.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Personality Development Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">💻</div>
+          <h3>Digital Training</h3>
+          <p>Technology and digital marketing internships with practical training on modern tools.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Digital Training Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🛍️</div>
+          <h3>Retail</h3>
+          <p>Retail industry internships covering sales, customer relations, and inventory management.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Retail Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">💊</div>
+          <h3>Pharma</h3>
+          <p>Pharmaceutical industry internships in research, quality control, and regulatory affairs.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Pharma Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🍽️</div>
+          <h3>Food & Beverages</h3>
+          <p>Food and beverage industry internships in production, quality assurance, and management.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Food & Beverages Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🏥</div>
+          <h3>Hospitality</h3>
+          <p>Hotel and hospitality internships covering front office, housekeeping, and guest relations.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Hospitality Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🏗️</div>
+          <h3>Construction</h3>
+          <p>Construction industry internships in project management, site supervision, and planning.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Construction Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🌐</div>
+          <h3>NGO</h3>
+          <p>Non-profit organization internships focusing on social work and community development.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('NGO Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">⚖️</div>
+          <h3>Legal</h3>
+          <p>Law firm internships providing practical legal experience and courtroom exposure.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Legal Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🧾</div>
+          <h3>Accounting</h3>
+          <p>Accounting and auditing internships with practical experience in financial management.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Accounting Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">🏠</div>
+          <h3>Real Estate</h3>
+          <p>Real estate internships covering property management, sales, and market analysis.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Real Estate Internship')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="icon">📚</div>
+          <h3>NBFC</h3>
+          <p>Non-Banking Financial Company internships in microfinance and lending operations.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('NBFC Internship')">Request Service</button>
+          </div>
+        </div>
+      </div> <!-- .internship-grid -->
+    </div> <!-- .container -->
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to Start Your Internship Journey?</h2>
+    <p>If you'd like to apply for any internship opportunity, click the button below — we'll guide you through the application process.</p>
+    <div style="margin-top:18px;">
+      <button class="btn" onclick="requestService('Internship Application')">Apply for Internship</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 One Contact Solutions | All Rights Reserved</p>
+  </footer>
+
+  <!-- Small script: store selected service and go to contact on home page -->
+  <script>
+    function requestService(serviceName) {
+      try {
+        localStorage.setItem('ocs_selected_service', serviceName);
+      } catch (e) {
+        console.warn('Could not save service selection', e);
+      }
+      // Redirect user to the contact section of your home page
+      window.location.href = 'index.html#contact';
+    }
+  </script>
+
+</body>
+</html>

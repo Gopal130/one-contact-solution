@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Security Services - One Contact Solutions</title>
+
+  <!-- Global styles from your site -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="security-services.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">One Contact Solutions (OCS)</div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="security-hero">
+    <div class="hero-content">
+      <h1>Security Services</h1>
+      <p>Comprehensive security solutions for your home and business — from CCTV installation to home automation and advanced security systems.</p>
+    </div>
+  </section>
+
+  <!-- Services list -->
+  <section class="security-services">
+    <div class="container">
+      <h2>Our Security Services</h2>
+      <p>We provide complete security solutions to protect what matters most to you. Click <strong>Request Service</strong> on any card to contact us directly about that service.</p>
+
+      <div class="security-grid">
+        <div class="security-card">
+          <div class="icon">📹</div>
+          <h3>CCTV All Brands</h3>
+          <p>Installation and maintenance of CCTV cameras from all major brands for complete surveillance.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('CCTV All Brands')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🏠</div>
+          <h3>Home Automation</h3>
+          <p>Smart home automation systems for enhanced security and convenience.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Home Automation')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🚪</div>
+          <h3>Motor Curtain</h3>
+          <p>Automated door curtain systems for privacy and security control.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Door Curtain')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🚪</div>
+          <h3>Gate Motor</h3>
+          <p>Automatic gate motor installation and maintenance for secure property access.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Gate Motor')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🔧</div>
+          <h3>Solar System</h3>
+          <p>Solar power systems for sustainable and backup power solutions.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Solar System')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">💡</div>
+          <h3>Ceiling Lights</h3>
+          <p>Professional ceiling light installation and smart lighting solutions.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Ceiling Lights')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🚨</div>
+          <h3>Alarm Systems</h3>
+          <p>Advanced alarm systems for intrusion detection and security alerts.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Alarm Systems')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🔐</div>
+          <h3>Access Control</h3>
+          <p>Electronic access control systems for secure entry management.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Access Control')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">👁️</div>
+          <h3>Motion Detectors</h3>
+          <p>Advanced motion detection systems for enhanced security monitoring.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Motion Detectors')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">📱</div>
+          <h3>Mobile Monitoring</h3>
+          <p>Remote security monitoring through mobile apps and devices.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Mobile Monitoring')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🔥</div>
+          <h3>Fire Detection</h3>
+          <p>Fire detection and alarm systems for comprehensive safety protection.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Fire Detection')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="security-card">
+          <div class="icon">🔧</div>
+          <h3>Security Maintenance</h3>
+          <p>Regular maintenance and servicing of all security systems and equipment.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Security Maintenance')">Request Service</button>
+          </div>
+        </div>
+      </div> <!-- .security-grid -->
+    </div> <!-- .container -->
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Secure Your Property Today!</h2>
+    <p>If you'd like to request a consultation for any security service, click the button below — we'll connect you with the right security expert.</p>
+    <div style="margin-top:18px;">
+      <button class="btn" onclick="requestService('Security Consultation')">Request Security Service</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 One Contact Solutions | All Rights Reserved</p>
+  </footer>
+
+  <!-- Small script: store selected service and go to contact on home page -->
+  <script>
+    function requestService(serviceName) {
+      try {
+        localStorage.setItem('ocs_selected_service', serviceName);
+      } catch (e) {
+        console.warn('Could not save service selection', e);
+      }
+      // Redirect user to the contact section of your home page
+      window.location.href = 'index.html#contact';
+    }
+  </script>
+
+</body>
+</html>

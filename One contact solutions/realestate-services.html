@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Construction & Real Estate Services - One Contact Solutions</title>
+
+  <!-- Global styles from your site -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="construction-services.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">One Contact Solutions (OCS)</div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="construction-hero">
+    <div class="hero-content">
+      <h1>Construction & Real Estate Services</h1>
+      <p>Complete construction and real estate solutions — from building construction to property transactions and land development.</p>
+    </div>
+  </section>
+
+  <!-- Services list -->
+  <section class="construction-services">
+    <div class="container">
+      <h2>Our Construction & Real Estate Services</h2>
+      <p>We provide end-to-end construction and real estate solutions. Click <strong>Request Service</strong> on any card to contact us directly about that service.</p>
+
+      <div class="construction-grid">
+        <div class="construction-card">
+          <div class="icon">🏗️</div>
+          <h3>Building Construction</h3>
+          <p>Complete building construction services from foundation to finishing.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Building Construction')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">🏠</div>
+          <h3>Rented House and Flats</h3>
+          <p>Find the perfect rental properties - houses and flats as per your requirements.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Rented House and Flats')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">🛒</div>
+          <h3>Purchase and Sale</h3>
+          <p>Property buying and selling assistance with complete documentation.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Purchase and Sale')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">🏭</div>
+          <h3>Commercial Factory and Lands</h3>
+          <p>Commercial factory setups and industrial land transactions.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Commercial Factory and Lands')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">📏</div>
+          <h3>Plot Boundary</h3>
+          <p>Professional plot boundary marking and surveying services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Plot Boundary')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">📋</div>
+          <h3>Project Management</h3>
+          <p>Complete construction project management from start to finish.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Project Management')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">🎨</div>
+          <h3>Interior Design</h3>
+          <p>Professional interior design and decoration services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Interior Design')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">📐</div>
+          <h3>Architectural Planning</h3>
+          <p>Complete architectural design and planning services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Architectural Planning')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">📄</div>
+          <h3>Property Documentation</h3>
+          <p>Complete property documentation and legal paperwork assistance.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Property Documentation')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">🔍</div>
+          <h3>Property Valuation</h3>
+          <p>Professional property valuation and market assessment services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Property Valuation')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">🛠️</div>
+          <h3>Renovation & Maintenance</h3>
+          <p>Property renovation and ongoing maintenance services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Renovation & Maintenance')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="construction-card">
+          <div class="icon">💡</div>
+          <h3>Real Estate Consulting</h3>
+          <p>Expert real estate investment and advisory services.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Real Estate Consulting')">Request Service</button>
+          </div>
+        </div>
+      </div> <!-- .construction-grid -->
+    </div> <!-- .container -->
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to Start Your Construction or Real Estate Project?</h2>
+    <p>If you'd like to request a consultation for any construction or real estate service, click the button below — we'll connect you with the right expert.</p>
+    <div style="margin-top:18px;">
+      <button class="btn" onclick="requestService('Construction & Real Estate Consultation')">Request Service</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 One Contact Solutions | All Rights Reserved</p>
+  </footer>
+
+  <!-- Small script: store selected service and go to contact on home page -->
+  <script>
+    function requestService(serviceName) {
+      try {
+        localStorage.setItem('ocs_selected_service', serviceName);
+      } catch (e) {
+        console.warn('Could not save service selection', e);
+      }
+      // Redirect user to the contact section of your home page
+      window.location.href = 'index.html#contact';
+    }
+  </script>
+
+</body>
+</html>

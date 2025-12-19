@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Legal Services - One Contact Solutions</title>
+
+  <!-- Global styles from your site -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="legal-services.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">One Contact Solutions (OCS)</div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="legal-hero">
+    <div class="hero-content">
+      <h1>Legal Services</h1>
+      <p>Reliable legal support for individuals and businesses — taxes, compliance, documentation, litigation and more.</p>
+    </div>
+  </section>
+
+  <!-- Services list -->
+  <section class="legal-services">
+    <div class="container">
+      <h2>Our Legal Services</h2>
+      <p>We cover a broad range of legal and compliance services. Click <strong>Request Service</strong> on any card to contact us directly about that service.</p>
+
+      <div class="legal-grid">
+        <div class="legal-card">
+          <div class="icon">📄</div>
+          <h3>ITR Filing</h3>
+          <p>Assistance with accurate Income Tax Return filing and e-filing support.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('ITR Filing')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">💰</div>
+          <h3>GST Return</h3>
+          <p>GST return preparation & filing to keep your business compliant.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('GST Return')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">🏢</div>
+          <h3>Company Forming</h3>
+          <p>Company registration and setup — private limited, LLP, or OPC guidance.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Company Forming')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">⚖️</div>
+          <h3>Civil Cases</h3>
+          <p>Representation and legal aid for civil disputes (property, torts, contracts).</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Civil Cases')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">🚨</div>
+          <h3>Criminal Cases</h3>
+          <p>Experienced criminal defence and representation in courts.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Criminal Cases')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">📊</div>
+          <h3>Chartered Accountant Services</h3>
+          <p>CA services for audits, taxation, bookkeeping and advisory.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Chartered Accountant Services')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">📑</div>
+          <h3>Company Secretary Services</h3>
+          <p>Compliance, statutory filings, board & secretarial support.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Company Secretary Services')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">🖊️</div>
+          <h3>Notary / Affidavit</h3>
+          <p>Prepare, notarize and authenticate affidavits and documents.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Notary/Affidavit')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">🪪</div>
+          <h3>E-Stamp</h3>
+          <p>Electronic stamp papers and stamping support for agreements.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('E-Stamp')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">✍️</div>
+          <h3>Agreements & Deeds</h3>
+          <p>Drafting and registration of rent agreements, compromise deeds, sale deeds.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Agreements & Deeds')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">🏷️</div>
+          <h3>Registry</h3>
+          <p>Property registration support, document verification and filing.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Registry')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">📜</div>
+          <h3>Certificates</h3>
+          <p>Income, caste and domicile certificate processing assistance.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Certificates')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">📂</div>
+          <h3>Mutation (Kharij Dakhil)</h3>
+          <p>Property mutation and land record updates with documentation.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Mutation (Kharij Dakhil)')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">🔓</div>
+          <h3>Bail</h3>
+          <p>Urgent bail assistance and legal procedures for release.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('Bail')">Request Service</button>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <div class="icon">🍽️</div>
+          <h3>FSSAI (Food Licence)</h3>
+          <p>Apply and obtain FSSAI food licenses and related compliance.</p>
+          <div class="card-actions">
+            <button class="btn request-btn" onclick="requestService('FSSAI (Food Licence)')">Request Service</button>
+          </div>
+        </div>
+      </div> <!-- .legal-grid -->
+    </div> <!-- .container -->
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Need Legal Help Now?</h2>
+    <p>If you'd like to request a consultation for any service, click the button below — we’ll connect you with the right expert.</p>
+    <div style="margin-top:18px;">
+      <button class="btn" onclick="requestService('General Legal Consultation')">Request Legal Service</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 One Contact Solutions | All Rights Reserved</p>
+  </footer>
+
+  <!-- Small script: store selected service and go to contact on home page -->
+  <script>
+    function requestService(serviceName) {
+      try {
+        localStorage.setItem('ocs_selected_service', serviceName);
+      } catch (e) {
+        console.warn('Could not save service selection', e);
+      }
+      // Redirect user to the contact section of your home page
+      window.location.href = 'index.html#contact';
+    }
+  </script>
+
+
+</body>
+</html>
